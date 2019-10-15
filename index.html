@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>180 Green Static Demo</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6b0ae97cf6.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>   
+    </head>
+    <body>
+        <header>
+            <nav>  <!-- 100% of vewport --> 
+                <ul>
+                    <li class="menu"><a href="#"><span class="border">DESTINATIONS<i class="down"></i></span></a>
+                        <ul class="drop-down-menu">
+                            <li><a href="#">Florida<span>></span></a>
+                                <ul class="sub-drop-down">
+                                    <li><a href="#">Concierge Experiences</a></li>
+                                    <li><a href="#">Local Experiences</a></li>
+                                    <li><a href="#">Equipment Rentals</a></li>
+                                    <li><a href="#">Build Your Itinerary</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="#">Colorado<span>></span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EXPERIENCES<i class="down"></i></a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li>
+                        <a href="#">
+                            <div id="logo" >
+                                <img src="img/180green-logo.png"/> 
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">EXECUTIVE ACCESS</a></li>
+                    <li><a href="#">WHO WE ARE <i class="down"></i></a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li  class='last'><a href="#" >CONTACT US</a></li>
+                </ul>      
+            </nav>     
+        </header> 
+        <div class="fav-container"><p>Recently Viewed<span class="heart"></span><span id="fav-container-num">0</span></p></div>  
+        <div id="bg-img-container" class="fill">
+            <!-- bg-img added via css-->
+            <button class="v-photo-btn">VIEW PHOTOS</button> 
+        </div>  
+        <div id="main-content-wrapper">
+            <div class="sub-content-wrapper"> 
+                <ul class="breadcrumbs">
+                    <li><a href="#">HOME <span class="seperate-crumbs">/</span></a></li>
+                    <li><a href="#">RENTALS <span class="seperate-crumbs">/</span></a></li>
+                    <li><a href="#">COMMUNITIES/CALORADO<span class="seperate-crumbs">/</span></a></li>
+                    <li><a href="#">LITTLE CABIN ON THE MOUNTAIN</a></li>   
+                </ul>
+                <h1>Little Cabin On The Mountain</h1> 
+                <div class="tabs">
+                    <ul>
+                        <li><a href="#" id="active-tab">Description</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Amenities</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>  
+                <div class="content-container-1">
+                    <div class="action-elements-1">
+                        <a href="#"><span class="fa fa-arrow-left fa-lg"></span>Previous Page</a>
+                        <div class="action-elements-2 move-right">
+                            <a href="#"><span class="fa fa-photo fa-lg"></span>Gallery</a>
+                            <a href="#"><span class="fa fa-print fa-lg"></span>Print</a>
+                        </div>
+                    </div>  
+                    <p>HOME HIGHTLIGHTS:     
+                        <br>
+                        <br> 
+                        - Mountain views<br><br>
+
+                        - Probably Haunted<br><br>
+                        
+                        - Hiking Trails<br><br>
+                        
+                        - Comes with 8 rusty mountain bikes<br><br>
+                        
+                        - Professionally decorated<br><br> 
+                        - 3 acres of land<br><br>
+                        - Distance to town 25 miles<br><br>
+                        - Dial-up Internet<br><br>
+                        - Private Hot Tub(Hot Spring)<br><br>
+                        - Fire Pit out back<br><br>
+                        
+                        HOME DETAILS:
+                
+                        Enjoy classic cabin elements and modern rustic finishes. Makes this lodge the quintessential property for your next get away. This picturesque cabin sits on 3 acres, is surrounded by aspen and pine trees, and features 5 bedrooms, 4 bathrooms, and accomidations for 14 guests.
+                        <br>
+                        <br>
+                
+                        SLEEPING ARRANGEMENTS: (Sleeps 14)
+                        <br>
+                        <br>
+                        First Floor:
+                        <br>
+                        <br>
+                        Guest Bedroom: Queen Bed, Shared Bathroom with Shower
+                        <br>
+                        <br>
+                        Guest Bedroom: Queen Bed, Shared Bathroom with Shower
+                        <br> 
+                        <br> 
+                        Guest Bedroom: Two Twin-over-Queen Bunk Beds, Private Bathroom with Shower
+                        <br>
+                        <br> 
+                        Second Floor:<br> 
+                        <br> 
+                        Master Bedroom: King Bed, En Suite Bathroom with Shower and Tub<br> 
+                        <br> 
+                        Guest Bedroom: Queen Bed, Shared Bathroom with Shower/Tub Combo
+                    </p>
+                </div>
+            </div> 
+            <div class="content-container-2">
+                <form>
+                    <div class="calendar-wapper">
+                        <span class="fa fa-calendar"></span>
+                        <input type="text" class="booking-calendar book-1" id="arrival-date" placeholder="Arrival" name="arrive" /> 
+                    </div>
+                    <div class="calendar-wapper"> 
+                        <span class="fa fa-calendar"></span>
+                        <input type="text" class="booking-calendar" id="departure-date" placeholder="Departure" name="depart"/>
+                    </div>
+                    <br>
+                    <a href="#" class="clear-dates">Clear Dates</a>       
+                    <button class="action-btn">GET PRICING NOW</button>
+                    <p>All quotes are valid for 6 hours and are subject to change based on supply and demand.</p>
+                    <button class="action-btn">SUBMIT INQUIRY</button>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/star100.png" alt="image of a star" class="stars"/> 
+                                <img src="img/star100.png" alt="image of a star" class="stars"/> 
+                                <img src="img/star100.png" alt="image of a star" class="stars"/> 
+                                <img src="img/star100.png" alt="image of a star" class="stars"/> 
+                                <img src="img/star100.png" alt="image of a star" class="stars"/> 
+                            </td>
+                            <td>28 Reviews</td>
+                        </tr>
+                        <tr>
+                            <td>Sleeps</td>
+                            <td>8</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bedrooms</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bathrooms</td>
+                            <td>2</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Half Baths</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>Property Type</td>
+                            <td>House</td>
+                        </tr>
+                    </table>
+                    <p id="fav-icon"><i  class="far fa-heart fa-lg"></i>Add to your favorites</p>
+                </form>
+            </div>  
+        </div>             
+        <footer>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f fa-lg"></i>
+                <i class="fab fa-pinterest fa-lg"></i>
+                <i class="fab fa-instagram fa-lg"></i>
+                <i class="fab fa-linkedin fa-lg"></i>
+            </div>         
+            <nav class="footer-nav">
+                <ul>
+                  <li>Blog<span>|</span></li> 
+                  <li>Contact Us<span>|</span></li>
+                  <li>Privacy Policy<span>|</span></li> 
+                  <li>Guest Login<span>|</span></li> 
+                  <li>Owner Login<span>|</span></li>
+                  <li>Site Map</li>     
+                </ul>
+            </nav>      
+            <p>2019 Copyright © 360 BLUE, LLC - 790 N CO HWY 393 #3B | SANTA ROSA BEACH, FL 32459 - (800) 554-9522</p>
+            <p>Design by 360Blue. Web Development by Moses McKnight</p>    
+        </footer> 
+        <script src="script.js"></script>   
+    </body> 
+</html>
